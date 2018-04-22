@@ -3,7 +3,7 @@ from mnist.dataset import get_dataset
 from mnist.contour import image_to_contours
 from mnist.contour import sample_contours
 
-n_points = 1000
+n_points = 128
 dataset = get_dataset('train')
 for image, label in dataset.values():
     contours = image_to_contours(image)
